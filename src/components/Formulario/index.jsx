@@ -8,10 +8,10 @@ const Formulario = () => {
       <h2>Crear mi Cita</h2>
 
       <form>
-        <CampoInput label="Nombre Mascota" type="text" name="mascota" />
-        <CampoInput label="Nombre Dueño" type="text" name="propietario" />
+        <CampoInput label="Nombre Mascota" type="text" name="mascota" placeholder="Nombre Mascota" />
+        <CampoInput label="Nombre Dueño" type="text" name="propietario" placeholder="Nombre dueño de la mascota" />
         <CampoInput label="Fecha" type="date" name="fecha" />
-        <CampoInput label="Hora" type="time" name="hora" />
+        <CampoInput label="hora" type="time" name="hora" />
 
         <CampoTextarea label="Síntomas" name="sintomas" />
 

@@ -10,7 +10,7 @@ const Cita = ({ mascota, dueño, fecha, hora, sintomas }) => {
       <p>Hora: <span>{hora}</span></p>
       <p>Síntomas: <span>{sintomas}</span></p>
 
-      <BotonEliminar />
+      <BotonEliminar/>
     </div>
   );
 };
