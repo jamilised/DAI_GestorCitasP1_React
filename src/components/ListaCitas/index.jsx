@@ -1,5 +1,5 @@
 import Cita from "./Cita";
-import "../styles/lista.css";
+import ".../styles/global.css";
 
 const ListaCitas = ({ citas }) => {
     return (

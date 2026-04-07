@@ -1,4 +1,4 @@
-import "../styles/cita.css";
+import ".../styles/global.css";
 
 const Cita = ({ cita }) => {
   const { mascota, propietario, fecha, hora, sintomas } = cita;
