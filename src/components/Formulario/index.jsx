@@ -1,23 +1,19 @@
-import ".../styles/global.css";
+import "./Formulario.css";
+import CampoInput from "../CampoInput";
+import CampoTextarea from "../CampoTextarea";
 
 const Formulario = () => {
-
-  const campos = [
-    { label: "Nombre Mascota", type: "text" },
-    { label: "Nombre Dueño", type: "text" },
-    { label: "Fecha", type: "date" },
-    { label: "Hora", type: "time" }
-  ];
-
   return (
     <>
       <h2>Crear mi Cita</h2>
 
       <form>
-        {campos.map(campo => (
-          <label>{campo.label}</label>)
-          (<input type={campo.type} className="u-full-width"/>
-        ))}
+        <CampoInput label="Nombre Mascota" type="text" name="mascota" />
+        <CampoInput label="Nombre Dueño" type="text" name="propietario" />
+        <CampoInput label="Fecha" type="date" name="fecha" />
+        <CampoInput label="Hora" type="time" name="hora" />
+
+        <CampoTextarea label="Síntomas" name="sintomas" />
 
         <button type="submit" className="u-full-width button-primary">
           Agregar Cita

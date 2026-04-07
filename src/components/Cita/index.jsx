@@ -1,19 +1,16 @@
-import ".../styles/global.css";
+import "./Cita.css";
+import BotonEliminar from "../BotonEliminar";
 
-const Cita = ({ cita }) => {
-  const { mascota, propietario, fecha, hora, sintomas } = cita;
-
+const Cita = ({ mascota, dueño, fecha, hora, sintomas }) => {
   return (
     <div className="cita">
       <p>Mascota: <span>{mascota}</span></p>
-      <p>Dueño: <span>{propietario}</span></p>
+      <p>Dueño: <span>{dueño}</span></p>
       <p>Fecha: <span>{fecha}</span></p>
       <p>Hora: <span>{hora}</span></p>
-      <p>Sintomas: <span>{sintomas}</span></p>
+      <p>Síntomas: <span>{sintomas}</span></p>
 
-      <button className="button eliminar u-full-width">
-        Eliminar x
-      </button>
+      <BotonEliminar />
     </div>
   );
 };
