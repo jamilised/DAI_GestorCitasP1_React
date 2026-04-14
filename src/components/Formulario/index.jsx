@@ -43,39 +43,11 @@ const Formulario = ({ setCitas }) => {
 
       <form onSubmit={ValidacionEnvio}>
 
-        <CampoInput
-          label="Nombre Mascota"
-          type="text"
-          name="mascota"
-          onChange={ValidacionCampo}
-        />
-
-        <CampoInput
-          label="Nombre Dueño"
-          type="text"
-          name="dueño"
-          onChange={ValidacionCampo}
-        />
-
-        <CampoInput
-          label="Fecha"
-          type="date"
-          name="fecha"
-          onChange={ValidacionCampo}
-        />
-
-        <CampoInput
-          label="hora"
-          type="time"
-          name="hora"
-          onChange={ValidacionCampo}
-        />
-
-        <CampoTextarea
-          label="Síntomas"
-          name="sintomas"
-          onChange={ValidacionCampo}
-        />
+        <CampoInput label="Nombre Mascota" type="text" name="mascota" onChange={ValidacionCampo} />
+        <CampoInput label="Nombre Dueño" type="text" name="dueño" onChange={ValidacionCampo}/>
+        <CampoInput label="Fecha" type="date" name="fecha" onChange={ValidacionCampo} />
+        <CampoInput label="hora" type="time" name="hora" onChange={ValidacionCampo} />
+        <CampoTextarea label="Síntomas" name="sintomas" onChange={ValidacionCampo} />
 
         <button type="submit" className="u-full-width button-primary">
           Agregar Cita
