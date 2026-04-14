@@ -1,6 +1,6 @@
 import "./CampoInput.css";
 
-const CampoInput = ({ label, type, name, placeholder }) => {
+const CampoInput = ({ label, type, name, placeholder, onChange }) => {
   return (
     <>
       <label>{label}</label>
@@ -9,6 +9,7 @@ const CampoInput = ({ label, type, name, placeholder }) => {
         name={name}
         className="u-full-width"
         placeholder={placeholder}
+        onChange={onChange}
       />
     </>
   );

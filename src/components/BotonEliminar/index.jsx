@@ -1,8 +1,8 @@
 import "./BotonEliminar.css";
 
-const BotonEliminar = () => {
+const BotonEliminar = ({ onClick }) => {
   return (
-    <button className="button eliminar u-full-width">
+    <button className="button eliminar u-full-width" onClick={onClick}>
       Eliminar ×
     </button>
   );

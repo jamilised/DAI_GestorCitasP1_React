@@ -1,7 +1,7 @@
 import "./Cita.css";
 import BotonEliminar from "../BotonEliminar";
 
-const Cita = ({ mascota, dueño, fecha, hora, sintomas }) => {
+const Cita = ({ mascota, dueño, fecha, hora, sintomas, eliminar }) => {
   return (
     <div className="cita">
       <p>Mascota: <span>{mascota}</span></p>
@@ -10,7 +10,7 @@ const Cita = ({ mascota, dueño, fecha, hora, sintomas }) => {
       <p>Hora: <span>{hora}</span></p>
       <p>Síntomas: <span>{sintomas}</span></p>
 
-      <BotonEliminar/>
+      <BotonEliminar onClick={eliminar} />
     </div>
   );
 };
